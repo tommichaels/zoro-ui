@@ -64,24 +64,24 @@ const web3Onboard = init({
 })
 
 const App = () => (
-  <GeolocationProvider>
-    <Web3OnboardProvider web3Onboard={web3Onboard}>
-      <QueryClientProvider client={queryClient}>
-        <MuiThemeProvider>
-          <AuthProvider>
-            <SuccessfulTransactionModalProvider>
-              <HashRouter>
-                <ToastContainer />
-                <Layout>
-                  <Switch />
-                </Layout>
-              </HashRouter>
-            </SuccessfulTransactionModalProvider>
-          </AuthProvider>
-        </MuiThemeProvider>
-      </QueryClientProvider>
-    </Web3OnboardProvider>
-  </GeolocationProvider>
+  // <GeolocationProvider>
+  <Web3OnboardProvider web3Onboard={web3Onboard}>
+    <QueryClientProvider client={queryClient}>
+      <MuiThemeProvider>
+        <AuthProvider>
+          <SuccessfulTransactionModalProvider>
+            <HashRouter>
+              <ToastContainer />
+              <Layout>
+                <Switch />
+              </Layout>
+            </HashRouter>
+          </SuccessfulTransactionModalProvider>
+        </AuthProvider>
+      </MuiThemeProvider>
+    </QueryClientProvider>
+  </Web3OnboardProvider>
+  // </GeolocationProvider>
 )
 
 export default App
