@@ -1,6 +1,11 @@
-# zoro-protocol
+# Zoro
 
-zoro-protocol
+<p align="center">
+
+  <img src="./screen/main.png">
+</p>
+
+Zoro
 Run:
 
 - yarn
@@ -14,7 +19,7 @@ Modified:
 Update the JSON deployment addresses
 
 - after building your contracts (yarn deploy-zksync)
-- cd ~/zoro-protocol/deploy
+- cd ~/zoro-ui/deploy
 - cp *.json src/constants/contract/addresses/
 
 Removed:
