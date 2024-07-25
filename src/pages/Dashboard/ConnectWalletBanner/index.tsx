@@ -8,6 +8,7 @@ import { useAuth } from "context/AuthContext";
 import React from "react";
 import { useTranslation } from "translation";
 import { useConnectWallet } from "@web3-onboard/react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 
 export interface ConnectWalletBannerUiProps {
@@ -43,9 +44,10 @@ export const ConnectWalletBannerUi: React.FC<ConnectWalletBannerUiProps> = ({
           {t("dashboard.connectWalletBanner.description")}
         </Typography>
 
-        <PrimaryButton css={styles.button} onClick={wallet ? openAuthModal : async () => await connect()} className="custom-btn-wrap">
+        {/* <PrimaryButton css={styles.button} onClick={wallet ? openAuthModal : async () => await connect()} className="custom-btn-wrap">
           {t("dashboard.connectWalletBanner.buttonLabel")}
-        </PrimaryButton>
+        </PrimaryButton> */}
+        <ConnectButton />
       </div>
 
       {/* <div css={styles.illustrationContainer}>

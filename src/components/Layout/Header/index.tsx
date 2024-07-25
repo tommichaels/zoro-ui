@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 //import ClaimRewardButton from '../ClaimRewardButton';
-import ConnectButton from "../ConnectButton";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import ConnectButton from "../ConnectButton";
 import { Toolbar } from "../Toolbar";
 import Breadcrumbs from "./Breadcrumbs";
 import { useStyles } from "./styles";
@@ -17,6 +18,7 @@ const Header: React.FC = () => {
 
         <div css={styles.ctaContainer}>
           {/*<ClaimRewardButton css={styles.claimXvsButton} /> */}
+          {/* <ConnectButton /> */}
           <ConnectButton />
         </div>
       </Toolbar>

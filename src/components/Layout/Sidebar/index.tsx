@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { Icon } from "../../Icon";
 //import ClaimRewardButton from '../ClaimRewardButton';
-import ConnectButton from "../ConnectButton";
+// import ConnectButton from "../ConnectButton";
 import { Toolbar } from "../Toolbar";
 import Link from "./Link";
 import { useStyles } from "./styles";
@@ -12,6 +12,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Menu from "@mui/material/Menu";
 import Typography from "@mui/material/Typography";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import logo_mobile from "assets/img/Logo-01.svg";
 import logo_desktop from "assets/img/Logo-02.svg";
 import React, { useState } from "react";
@@ -94,11 +95,13 @@ export const SidebarUi: React.FC = () => {
         <div css={styles.flexRow}>
           <Icon name="logoMobile" css={styles.mobileLogo} />
 
-          <ConnectButton
+          {/* <ConnectButton
             fullWidth
             css={styles.mobileConnectButton}
             className="custom-btn-wrap"
-          />
+          /> */}
+
+          <ConnectButton />
 
           <button id="mobile_burger" title="Burger Menu" type="button" onClick={openMenu} css={styles.actionButton}>
             <Icon name="burger" css={styles.burger} />
@@ -121,11 +124,13 @@ export const SidebarUi: React.FC = () => {
           <div css={[styles.flexRow, styles.doublePadding]}>
             <Icon name="logoMobile" css={styles.mobileLogo} />
 
-            <ConnectButton
+            {/* <ConnectButton
               fullWidth
               css={styles.mobileConnectButton}
               className="custom-btn-wrap"
-            />
+            /> */}
+
+            <ConnectButton />
 
             <button type="button" onClick={closeMenu} css={styles.actionButton}>
               <Icon name="closeRounded" css={styles.burger} />

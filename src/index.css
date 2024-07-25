@@ -1,0 +1,15 @@
+.iekbcc0.iekbcc9.ju367v78.ju367v7t.ju367v9i.ju367vn.ju367vei.ju367vf3.ju367v16.ju367v1h.ju367v2g.ju367v8u._12cbo8i3.ju367v8r._12cbo8i4._12cbo8i6 {
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #000000;
+}
+
+
+@media (max-width: 425px) { 
+    .iekbcc0.iekbcc9.ju367v78.ju367v7t.ju367v9i.ju367vn.ju367vei.ju367vf3.ju367v16.ju367v1h.ju367v2g.ju367v8u._12cbo8i3.ju367v8r._12cbo8i4._12cbo8i6 {
+        padding: 8px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+}
